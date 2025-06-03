@@ -1,0 +1,297 @@
+body {
+  font-family: sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  background-image: url('fondo.jpg'); /* Agregar imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la página */
+  background-position: center center; /* Centra la imagen */
+  background-attachment: fixed; /* Hace que el fondo se quede fijo al hacer scroll */
+}
+
+
+h1 {
+  color: #FFD700;
+  margin-bottom: 40px;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #111;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #FFD700;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.logo {
+  height: 200px;
+}
+
+.logo {
+  height: 200px;
+}
+
+header nav ul li a:hover {
+  color: #fff;
+}
+
+header .busqueda {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header .busqueda input {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+}
+
+header .busqueda button {
+  background-color: #FFD700;
+  color: #1e1e1e;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header .busqueda button:hover {
+  background-color: #fff;
+  color: #1e1e1e;
+}
+
+.top-animales, .otros-animales, .tabla-habitat, .productos-servicios, .sobre-nosotros, .contacto {
+  margin-bottom: 40px;
+}
+
+.centrado {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.imagen-box {
+  display: inline-block;
+  margin: 30px;
+}
+
+.borde {
+  border: 5px solid rgba(255, 255, 0, 0.8);
+  padding: 20px;
+  position: relative;
+}
+
+.padding {
+  background-color: rgba(0, 255, 255, 0.2);
+  padding: 15px;
+  position: relative;
+}
+
+.contenido {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
+  position: relative;
+}
+
+.contenido img {
+  width: 300px;
+  height: 175px;
+  display: block;
+  margin: 0 auto 10px auto;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contenido img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.8);
+  filter: brightness(1.2);
+}
+
+.contenido p {
+  color: #FFD700;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #FFD700;
+  color: #1e1e1e;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+}
+
+.home {
+  background-color: #333;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  margin-top: 40px;
+}
+
+.blog {
+  background-color: #333;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  margin-top: 40px;
+}
+
+
+.productos-servicios {
+background-color: #333;
+padding: 40px 20px;
+border-radius: 10px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+margin-top: 40px;
+}
+
+.productos-servicios h2 {
+color: #FFD700;
+font-size: 2.5em;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.productos-servicios ul {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.productos-servicios li {
+font-size: 1.2em;
+color: #fff;
+margin: 10px 0;
+padding: 15px;
+background-color: rgba(255, 255, 0, 0.2);
+border-radius: 10px;
+transition: background-color 0.3s, transform 0.3s ease;
+width: 45%;
+text-align: center;
+}
+
+.productos-servicios li:hover {
+background-color: rgba(255, 255, 0, 0.4);
+transform: translateY(-5px);
+}
+
+.productos-servicios li a {
+text-decoration: none;
+color: #FFD700;
+font-size: 1.1em;
+display: block;
+transition: color 0.3s;
+}
+
+.productos-servicios li a:hover {
+color: #fff;
+}
+
+.sobre-nosotros {
+background-color: #333;
+padding: 40px 20px;
+border-radius: 10px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.sobre-nosotros h2 {
+color: #FFD700;
+font-size: 2.5em;
+margin-bottom: 20px;
+}
+
+.sobre-nosotros p {
+font-size: 1.1em;
+line-height: 1.6;
+color: #fff;
+}
+
+.contacto {
+background-color: #333;
+padding: 40px 20px;
+border-radius: 10px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.contacto h2 {
+color: #FFD700;
+font-size: 2.5em;
+margin-bottom: 20px;
+}
+
+.contacto-info ul {
+list-style: none;
+padding: 0;
+}
+
+.contacto-info ul li {
+margin: 10px 0;
+}
+
+.contacto-info ul li a {
+color: #FFD700;
+font-size: 1.2em;
+text-decoration: none;
+}
+
+.contacto-info ul li a:hover {
+color: #fff;
+}
+
+.contacto form input, .contacto form textarea {
+width: 100%;
+padding: 15px;
+margin: 10px 0;
+border-radius: 10px;
+border: 1px solid #FFD700;
+background-color: #444;
+color: #fff;
+}
+
+.contacto form input[type="submit"] {
+background-color: #FFD700;
+color: #1e1e1e;
+border: none;
+cursor: pointer;
+}
+
+.contacto form input[type="submit"]:hover {
+background-color: #fff;
+color: #1e1e1e;
+}

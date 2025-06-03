@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Animales Salvajes</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="estilos.css">
+  
+  <!-- Enlace a la tipografía Bangers -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+  <style>
+    /* Ocultar todas las secciones por defecto */
+    .seccion {
+      display: none;
+    }
+    /* Mostrar solo la sección activa */
+    .seccion.activa {
+      display: block;
+    }
+    .imagen-centro {
+      display: block;
+      margin: 20px auto;
+      width: 60%; /* Ajusta el tamaño de la imagen */
+      max-width: 600px; /* Para no hacerla demasiado grande */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    /* Estilo para el título "Animales Salvajes" */
+    h1 {
+      font-family: 'Bangers', sans-serif;
+      color: #FFD700;
+      margin-bottom: 40px;
+      font-size: 4em; /* Aumentamos el tamaño para que destaque */
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+
+    /* Nuevas modificaciones */
+    /* Fondo gris en las secciones Home y Blog */
+    #home, #blog {
+      background-color: #444;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      color: #fff; /* Cambié el color del texto para que contraste mejor con el fondo gris */
+      font-family: 'Arial', sans-serif; /* Cambié la tipografía del texto */
+    }
+    #home h2, #blog h2 {
+      font-family: 'Bangers', sans-serif; /* Mantuve la tipografía de los títulos */
+      color: #FFD700;
+    }
+
+    /* Aplicar tipografía Arial en todas las secciones */
+    #sobre, #productos, #contacto, #blog, #home {
+      font-family: 'Arial', sans-serif;
+      color: #fff; /* Aseguramos que el texto sea blanco para que se vea bien con el fondo oscuro */
+    }
+
+    #productos h2, #sobre h2, #contacto h2 {
+      font-family: 'Bangers', sans-serif; /* Usar la tipografía Bangers en los títulos */
+      color: #FFD700;
+    }
+
+    #productos ul, #sobre p, #contacto ul {
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenedor">
+    <header>
+      <img src="logo.png" alt="Logo de Animales Salvajes" class="logo">
+      <h1>Animales Salvajes</h1>
+      <nav>
+        <ul>
+          <li><a href="#home" onclick="mostrarSeccion('home')">Home</a></li>
+          <li><a href="#blog" onclick="mostrarSeccion('blog')">Blog</a></li>
+          <li><a href="#sobre" onclick="mostrarSeccion('sobre')">Sobre Nosotros</a></li>
+          <li><a href="#productos" onclick="mostrarSeccion('productos')">Productos/Servicios</a></li>
+          <li><a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+        </ul>
+        <div class="busqueda">
+          <input type="text" id="buscarInput" placeholder="Buscar...">
+          <button type="button" onclick="buscarAnimal()">🔍</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Sección Home -->
+    <section id="home" class="seccion activa">
+      <h2>Descubre el fascinante mundo de los animales salvajes</h2>
+      <h3>Desde los depredadores hasta los más sigilosos</h3>
+      <p>Muy lejos, en las profundidades de las selvas tropicales, en los áridos desiertos y las vastas sabanas...</p>
+      
+      <!-- Imagen en la sección Home -->
+      <img src="ia.jpeg" alt="Imagen de animales" class="imagen-centro">
+    </section>
+
+    <!-- Sección Blog -->
+    <section id="blog" class="seccion">
+      <h2>Blog</h2>
+      <div class="top-animales">
+        <h3>Top 5 animales salvajes más impresionantes</h3>
+        <p>Estos son algunos de los animales más admirados por su fuerza, inteligencia o belleza.</p>
+        <ol class="centrado">
+          <li><strong>León</strong> – Rey de la sabana africana, líder por naturaleza.</li>
+          <li><strong>Tigre</strong> – Poderoso felino de Asia, solitario y sigiloso.</li>
+          <li><strong>Elefante africano</strong> – El más grande terrestre, símbolo de sabiduría.</li>
+          <li><strong>Águila real</strong> – Ave majestuosa, reina de los cielos montañosos.</li>
+          <li><strong>Hipopótamo</strong> – Sorprendentemente veloz y territorial.</li>
+        </ol>
+
+        <div class="otros-animales">
+          <h3>Otros animales salvajes</h3>
+          <ul class="centrado">
+            <li><strong>Guepardo</strong> – El animal terrestre más rápido, alcanza hasta 112 km/h.</li>
+            <li><strong>Jaguar</strong> – Felino americano con mordida potente y excelente nadador.</li>
+            <li><strong>Lobo gris</strong> – Mamífero social que caza en manada y vive en territorios extensos.</li>
+            <li><strong>Oso pardo</strong> – Omnívoro adaptable, hiberna durante el invierno.</li>
+            <li><strong>Camaleón</strong> – Reptil que cambia de color para camuflaje y comunicación.</li>
+            <li><strong>Serpiente pitón</strong> – Constrictora no venenosa que mata por presión, habita en regiones tropicales.</li>
+            <li><strong>Rinoceronte</strong> – Mamífero de gran tamaño, conocido por su cuerno distintivo y piel gruesa.</li>
+          </ul>
+        </div>
+
+         <!-- Video de YouTube -->
+       <div class="video-container">
+          <h3>Video sobre Animales Salvajes</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/3C_YzAtvSfg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+
+        <div class="imagenes">
+          <div class="imagen-box" id="leon">
+            <div class="borde"><div class="padding"><div class="contenido">
+              <img src="leon.jpg" alt="León en la sabana">
+              <p>León en la sabana africana</p>
+            </div></div></div>
+          </div>
+          <div class="imagen-box" id="cocodrilo">
+            <div class="borde"><div class="padding"><div class="contenido">
+              <img src="cocodrilo.jpg" alt="Cocodrilo en el río">
+              <p>Cocodrilo acechando en el río</p>
+            </div></div></div>
+          </div>
+          <div class="imagen-box" id="jaguar">
+            <div class="borde"><div class="padding"><div class="contenido">
+              <img src="jaguar.jpg" alt="Jaguar en la selva">
+              <p>Jaguar caminando en la selva</p>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Productos/Servicios -->
+    <section id="productos" class="seccion">
+      <div class="productos-servicios">
+        <h2>Productos y Servicios</h2>
+        <ul>
+          <li><a href="http://data.sedema.cdmx.gob.mx/zoo_chapultepec/" target="_blank">Entradas a Zoológicos</a></li>
+          <li><a href="https://www.amazon.com.mx/s?k=libros+animales+salvajes" target="_blank">Libros informativos</a></li>
+          <li><a href="https://www.museodelamanimal.mx/tienda" target="_blank">Tienda de recuerdos</a></li>
+          <li><a href="https://www.africamsafari.com/" target="_blank">Safaris</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre" class="seccion">
+      <div class="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una organización dedicada a la conservación de la fauna salvaje. Trabajamos para proteger los hábitats de los animales y promover el entendimiento de la biodiversidad global. El propósito de esta página es informar a la audiencia sobre los diferentes animales salvajes y que se informen más sobre este tema.</p>
+        
+        <!-- Imagen en la sección Sobre Nosotros -->
+        <img src="animales.jpg" alt="Imagen de animales" class="imagen-centro">
+      </div>
+    </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="seccion">
+          <div class="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto-info">
+              <ul>
+                <li><a href="mailto:info@animales.com">Email: info@animales.com</a></li>
+                <li><a href="tel:+123456789">Teléfono: +123 456 789</a></li>
+                <li><a href="https://wa.me/123456789" target="_blank">WhatsApp</a></li>
+              </ul>
+            </div>
+            <div class="formulario">
+              <form action="#">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo Electrónico" required>
+                <input type="tel" name="telefono" placeholder="Teléfono" required>
+                <textarea name="mensaje" placeholder="Tu mensaje..." required></textarea>
+                <input type="submit" value="Enviar">
+              </form>
+            </div>
+            
+            <!-- Imagen en la sección Contacto -->
+            <img src="contacto.jpg" alt="Imagen de contacto" class="imagen-centro">
+          </div>
+        </section>
+    
+      </div>
+
+  <!-- Scripts -->
+  <script>
+    function mostrarSeccion(id) {
+      document.querySelectorAll('.seccion').forEach(s => s.classList.remove('activa'));
+      document.getElementById(id).classList.add('activa');
+    }
+    function buscarAnimal() {
+      const valor = document.getElementById("buscarInput").value.toLowerCase();
+      if (["leon","cocodrilo","jaguar"].includes(valor)) {
+        mostrarSeccion(valor);
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
